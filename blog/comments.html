@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+    <link rel="stylesheet" href="/css/bootstrap-5.3.3-dist/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/721b0e17c3.js" crossorigin="anonymous"></script>
+
+    <style>
+        footer {
+            display: flex;
+            flex-direction: row;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: antiquewhite;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .comment {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .comment .author {
+            font-weight: bold;
+            color: #333;
+            margin-right: 10px;
+        }
+
+        .comment .date {
+            color: #666;
+            font-size: 0.8em;
+            margin-right: 10px;
+        }
+
+        .comment img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .comment p {
+            margin-top: 5px;
+        }
+
+        .comment-form {
+            margin-top: 20px;
+        }
+
+        .comment-form textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .comment-form input[type="text"],
+        .comment-form input[type="email"] {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .comment-form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .comment-form input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar- bg-" style="background-color: antiquewhite;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Age'moh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/about.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/blog/leadership.html">Leadership</a></li>
+                            <li><a class="dropdown-item" href="/blog/communication.html">Communication</a></li>
+                            <li><a class="dropdown-item" href="/blog/soft_journey.html">Software Engineering journey</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/blog/hobbies.html">Hobbies</a></li>
+                            <li><a class="dropdown-item" href="/blog/comments.html">Comments</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact me</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- nav bar -->
+
+    <!-- body  -->
+
+    <div class="container">
+        <h2>Comments</h2>
+        <div class="comment">
+            <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="Profile Picture">
+            <div>
+                <div class="author">Audry </div>
+                <div class="date">March 1, 2024</div>
+                <p> I am so much inspired</p>
+            </div>
+        </div>
+        <div class="comment">
+            <img src="https://www.gravatar.com/avatar/5f4dcc3b5aa765d61d8327deb882cf99" alt="Profile Picture">
+            <div>
+                <div class="author">Paul</div>
+                <div class="date">March 2, 2024</div>
+                <p>Wow, interesting!</p>
+            </div>
+        </div>
+        <div class="comment">
+            <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="Profile Picture">
+            <div>
+                <div class="author">Marc</div>
+                <div class="date">March 3, 2024</div>
+                <p>Keep up with the good work</p>
+            </div>
+        </div>
+        <div class="comment">
+            <img src="https://www.gravatar.com/avatar/5f4dcc3b5aa765d61d8327deb882cf99" alt="Profile Picture">
+            <div>
+                <div class="author">Keren</div>
+                <div class="date">March 4, 2024</div>
+                <p>Truly inspirational piece.</p>
+            </div>
+        </div>
+        <div class="comment">
+            <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="Profile Picture">
+            <div>
+                <div class="author">Jacob</div>
+                <div class="date">March 5, 2024</div>
+                <p></p>Very impressive work </p>
+            </div>
+        </div>
+        <div class="comment">
+            <img src="https://www.gravatar.com/avatar/5f4dcc3b5aa765d61d8327deb882cf99" alt="Profile Picture">
+            <div>
+                <div class="author">Christian</div>
+                <div class="date">March 5, 2024</div>
+                <p>Exceptionally good.</p>
+            </div>
+        </div>
+        <div class="comment">
+            <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="Profile Picture">
+            <div>
+                <div class="author">Victor</div>
+                <div class="date">March 6, 2024</div>
+                <p>I have been struggling, but now I'm inspired.</p>
+            </div>
+        </div>
+        <div class="comment">
+            <img src="https://www.gravatar.com/avatar/5f4dcc3b5aa765d61d8327deb882cf99" alt="Profile Picture">
+            <div>
+                <div class="author">peter</div>
+                <div class="date">March 6, 2024</div>
+                <p>You're a great leader indeed.</p>
+            </div>
+        </div>
+        <div class="comment-form">
+            <h3>Leave a Comment</h3>
+            <form action="#" method="post">
+                <textarea name="comment" placeholder="Enter your comment" required></textarea>
+                <br>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <br>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <br>
+                <input type="submit" value="Submit" style="margin: 50px; width: 150px;border-radius: 10px; background-color: green;">
+            </form>
+        </div>
+    </div>
+
+<!-- body  -->
+
+    <hr>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Navigation</h5>
+                    <ul class="footer-nav">
+                        <a href="/index.html">Home</a><br>
+                        <a href="/about.html">About </a><br>
+                        <a href="/gallery.html">Gallery</a><br>
+                        <a href="/blog.html">Blog</a></li><br>
+                        <a href="/contact.html">Contact me</a><br>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Blog categories</h5>
+                    <ul class="footer-nav">
+                        <li><a href="/blog/leadership.html">Leadership</a></li>
+                        <li><a href="/blog/communication.html">Communication</a></li>
+                        <li><a href="/blog/soft_journey.html">Software Engineering journey</a></li>
+                        <li><a href="/blog/hobbies.html">Hobbies</a></li>
+                        <li><a href="/blog/comments.html">Comments</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Me</h5>
+                    <ul class="social-icons">
+                        <a href="https://www.facebook.com/sarah.agemo.75"><i class="fab fa-facebook-f"></i>
+                            Facebook</a><br>
+                        <a href="https://twitter.com/sarahagemo06"><i class="fab fa-twitter"></i> Twitter</a><br>
+                        <a href="https://www.instagram.com/sarah_agemoh/"><i class="fab fa-instagram"></i>
+                            Instagram</a><br>
+                        <a href="https://www.linkedin.com/in/sarah-agemo-a14b241b7/"><i class="fab fa-linkedin-in"></i>
+                            LinkedIn</a><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <hr>
+    <p style=" text-align: center;"> <i class="fa fa-copyright" aria-hidden="true"></i> 2024 Sarah Agemo</p>
+    <!-- footer -->
+
+    <script src="js/include.js"></script>
+    <script src="/css/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
